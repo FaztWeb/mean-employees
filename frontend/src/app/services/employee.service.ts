@@ -10,7 +10,6 @@ export class EmployeeService {
 
   selectedEmployee: Employee;
   employees: Employee[];
-  
   readonly URL_API = 'http://localhost:3000/api/employees';
 
   constructor(private http: HttpClient) {
