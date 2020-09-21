@@ -33,7 +33,7 @@ export class EmployeeComponent implements OnInit {
 
   getEmployees() {
     this.employeeService.getEmployees().subscribe((res) => {
-      this.employeeService.employees = res as Employee[];
+      this.employeeService.employees = res;
     });
   }
 
